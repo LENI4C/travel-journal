@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(248, 81, 81, 0.9);
+    padding: 1em;
+    color: beige;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+h1 {
+    font-size: large;
+}
+
+main {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-container {
+    max-width: 90vw;
+    margin: 0 auto 2em;
+}
+
+.card {
+    margin-bottom: 1.3em;
+}
+
+.card-info > * {
+    margin-block: 0.5em;
+}
+
+.top-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1em;
+}
+
+a {
+    color: rgb(161, 159, 159);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color: rgba(248, 81, 81, 0.9);
+}
+
+.main-info {
+    text-align: justify;
+}
+
+.dates {
+    margin-block: 0.5em;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid rgb(201, 198, 198);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .location-image {
+        width: 100%;
+        aspect-ratio: 1 / .5;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        max-width: 80vw;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        column-gap: 2em;
+    }
+
+    .top-info {
+        justify-content: start;
+    }
+}

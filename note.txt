@@ -1,0 +1,1 @@
+conditional rendering to remove the hr in the last card component
